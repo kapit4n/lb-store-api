@@ -28,6 +28,14 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "unitOfMeasure": {
+      "type": "belongsTo",
+      "model": "unitOfMeasure",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
