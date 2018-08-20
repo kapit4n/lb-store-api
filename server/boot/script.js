@@ -1,4 +1,4 @@
-//*
+/*
 'use strict';
 // uncomment this to migrate tables on mysql 
 var async = require('async');
@@ -16,4 +16,4 @@ module.exports = function (app) {
     mysqlDB.disconnect();
   });
 };
-//*/
+// */

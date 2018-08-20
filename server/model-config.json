@@ -46,5 +46,17 @@
   "unitOfMeasure": {
     "dataSource": "mysql",
     "public": true
+  },
+  "vendor": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "costContract": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "contractDetail": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
