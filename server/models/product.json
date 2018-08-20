@@ -1,5 +1,5 @@
 {
-  "name": "Research",
+  "name": "product",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,17 +10,10 @@
       "type": "string",
       "required": true
     },
-    "startDate": {
-      "type": "date"
-    },
-    "endDate": {
-      "type": "date"
-    },
     "description": {
-      "type": "string"
-    },
-    "imageUrl": {
-      "type": "string"
+      "type": [
+        "string"
+      ]
     }
   },
   "validations": [],

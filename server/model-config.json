@@ -35,11 +35,15 @@
     "dataSource": "mysql",
     "public": false
   },
-  "Research": {
+  "product": {
     "dataSource": "mysql",
     "public": true
   },
-  "ResearchGoal": {
+  "productPresentation": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "unitOfMeasure": {
     "dataSource": "mysql",
     "public": true
   }

@@ -1,0 +1,39 @@
+{
+  "name": "productPresentation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "unitCost": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "product": {
+      "type": "belongsTo",
+      "model": "product",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "unitOfMeasure": {
+      "type": "belongsTo",
+      "model": "unitOfMeasure",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

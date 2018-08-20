@@ -1,5 +1,5 @@
 {
-  "name": "ResearchGoal",
+  "name": "unitOfMeasure",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -7,20 +7,19 @@
   },
   "properties": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "description": {
-      "type": "string"
-    },
-    "imageUrl": {
-      "type": "string"
+    "value": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "research": {
+    "baseUnit": {
       "type": "belongsTo",
-      "model": "Research",
+      "model": "unitOfMeasure",
       "foreignKey": "",
       "options": {
         "nestRemoting": true

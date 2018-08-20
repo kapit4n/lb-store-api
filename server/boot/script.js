@@ -1,11 +1,11 @@
-/*
+//*
 'use strict';
 // uncomment this to migrate tables on mysql 
 var async = require('async');
 
 module.exports = function (app) {
   var mysqlDB = app.dataSources.mysql;
-  var lbTables = ['User', 'ACL', 'RoleMapping', 'Role', 'Research', 'ResearchGoal'];
+  var lbTables = ['User', 'ACL', 'RoleMapping', 'Role', 'product', 'productPresentation', 'unitOfMeasure'];
 
   mysqlDB.autoupdate(lbTables, function (err) {
     if (err) {
@@ -16,4 +16,4 @@ module.exports = function (app) {
     mysqlDB.disconnect();
   });
 };
-*/
+//*/
